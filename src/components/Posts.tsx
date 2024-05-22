@@ -48,7 +48,7 @@ type PostProps = {
             view all
           </h1>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-[20px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-[20px]">
           {postDetails.map((post, index) => (
             <Post
               key={index}
