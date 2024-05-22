@@ -14,7 +14,7 @@ This is a personal portfolio website inspired by a [UI kit](https://www.figma.co
 
 ## Demo
 
-Check out the live demo of the portfolio website [here](https://personal-portfolio-mintech-dot.netlify.app/).
+Check out the live demo of the portfolio website [here](https://personal-portfolio-mintechdot.netlify.app/).
 
 ## Features
 
