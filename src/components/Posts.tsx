@@ -1,3 +1,4 @@
+import Post from "./Post";
 // Define a type for the Post props
 type PostProps = {
     title: string;
@@ -6,19 +7,7 @@ type PostProps = {
     description: string;
   };
   
-  const Post = ({ title, date, categories, description }: PostProps) => {
-    return (
-      <div className="my-4 mx-[11px] md:mx-0 p-4 lg:p-6 bg-[#ffffff] rounded-[4px] shadow-md">
-        <h1 className="text-dark text-[22px] md:text-[26px] font-bold">{title}</h1>
-        <div>
-          <h2 className="font-normal text-dark text-[16px] md:text-[18px] py-4 lg:py-6">
-            {date} &nbsp; &nbsp; | &nbsp; &nbsp; {categories}
-          </h2>
-          <p className="text-dark text-[16px] font-normal">{description}</p>
-        </div>
-      </div>
-    );
-  };
+
   
   const Posts = () => {
     const postDetails: PostProps[] = [
@@ -50,6 +39,8 @@ type PostProps = {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 md:gap-[20px]">
           {postDetails.map((post, index) => (
+                    <div className="my-4 mx-[11px] md:mx-0 p-4 lg:p-6 bg-[#ffffff] rounded-[4px] shadow">
+
             <Post
               key={index}
               title={post.title}
@@ -57,6 +48,7 @@ type PostProps = {
               categories={post.categories}
               description={post.description}
             />
+            </div>
           ))}
         </div>
       </section>

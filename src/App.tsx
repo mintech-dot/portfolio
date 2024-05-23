@@ -1,19 +1,15 @@
-import Navbar from './components/Nabvar'
-import Hero from './components/Hero'
-import Posts from './components/Posts'
-import Featured from './components/Featured'
-import Footer from './components/Footer'
-import './index.css'
+import { Outlet } from "react-router-dom";
+import Navbar from "./partials/Nabvar";
+import Footer from "./partials/Footer";
+import "./index.css";
 function App() {
   return (
     <div className="font-heebo">
       <Navbar />
-      <Hero />
-      <Posts />
-      <Featured />
+      <Outlet />
       <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

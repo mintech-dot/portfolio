@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Transition } from "@headlessui/react";
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -55,24 +56,30 @@ const Navbar = () => {
           <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-end">
             <div className="hidden sm:block sm:ml-6">
               <div className="flex space-x-4">
-                <a
-                  href="#"
-                  className="text-gray-300  hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                <NavLink
+                  to="/"
+                  className="text-gray-300 focus:text-primary hover:text-primary block px-3 py-2 rounded-md text-sm font-medium"
+                >
+                  Home
+                </NavLink>
+                <NavLink
+                  to="/works"
+                  className="text-gray-300 focus:text-primary hover:text-primary block px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Works
-                </a>
-                <a
-                  href="#"
-                  className="text-gray-300  hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                </NavLink>
+                <NavLink
+                  to="/blog"
+                  className="text-gray-300 focus:text-primary hover:text-primary block px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Blog
-                </a>
-                <a
-                  href="#"
-                  className="text-gray-300  hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                </NavLink>
+                <NavLink
+                  to="/contact"
+                  className="text-gray-300 focus:text-primary hover:text-primary block px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Contact
-                </a>
+                </NavLink>
               </div>
             </div>
           </div>
@@ -93,24 +100,30 @@ const Navbar = () => {
           id="mobile-menu"
         >
           <div className="px-2 pt-2 pb-3 space-y-1">
-            <a
-              href="#"
-              className="text-gray-300  hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            <NavLink
+              to="/"
+              className="text-gray-300   hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
+            >
+              Home
+            </NavLink>
+            <NavLink
+              to="/works"
+              className="text-gray-300  hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
             >
               Works
-            </a>
-            <a
-              href="#"
-              className="text-gray-300  hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            </NavLink>
+            <NavLink
+              to="/blog"
+              className="text-gray-300  hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
             >
               Blog
-            </a>
-            <a
-              href="#"
-              className="text-gray-300  hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            </NavLink>
+            <NavLink
+              to="/contact"
+              className="text-gray-300  hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
             >
               Contact
-            </a>
+            </NavLink>
           </div>
         </div>
       </Transition>
