@@ -102,25 +102,25 @@ const Navbar = () => {
           <div className="px-2 pt-2 pb-3 space-y-1">
             <NavLink
               to="/"
-              className="text-gray-300   hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
+              className="text-gray-300  focus:text-primary hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
             >
               Home
             </NavLink>
             <NavLink
               to="/works"
-              className="text-gray-300  hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
+              className="text-gray-300 focus:text-primary hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
             >
               Works
             </NavLink>
             <NavLink
               to="/blog"
-              className="text-gray-300  hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
+              className="text-gray-300 focus:text-primary hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
             >
               Blog
             </NavLink>
             <NavLink
               to="/contact"
-              className="text-gray-300  hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
+              className="text-gray-300 focus:text-primary hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
             >
               Contact
             </NavLink>

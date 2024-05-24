@@ -1,7 +1,7 @@
 import feature1 from "../assets/feature1.png";
 import feature2 from "../assets/feature2.png";
 import feature3 from "../assets/feature3.png";
-import FeatureItem from "./FeatureItem"; // Adjust the import path as necessary
+import FeatureItem from "./ui/FeatureItem"; // Adjust the import path as necessary
 
 interface Feature {
   imgSrc: string;
@@ -17,22 +17,25 @@ const features: Feature[] = [
     title: "Designing Dashboards",
     year: "2020",
     category: "Dashboard",
-    description: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+    description:
+      "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
   },
   {
     imgSrc: feature2,
     title: "Vibrant Portraits of 2020",
     year: "2020",
     category: "Illustration",
-    description: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+    description:
+      "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
   },
   {
     imgSrc: feature3,
     title: "36 Days of Malayalam type",
     year: "2020",
     category: "Typography",
-    description: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
-  }
+    description:
+      "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+  },
 ];
 
 const Featured = () => {
