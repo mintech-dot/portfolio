@@ -1,4 +1,4 @@
-import Post from "../components/ui/Post";
+import Post from "../components/ui/PostCard";
 
 type PostProps = {
   title: string;

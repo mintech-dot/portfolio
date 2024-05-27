@@ -1,14 +1,14 @@
-import Hero from "../components/Hero"
-import Featured from "../components/Featured"
-import Posts from "../components/Posts"
-const Home = () =>{
-    return(
-        <>
-        <Hero />
-        <Posts />
-        <Featured />
-        </>
-    )
-}
+import Hero from "../components/Layout/Hero";
+import Featured from "../components/Layout/Featured";
+import Posts from "../components/Layout/Posts";
+const Home = () => {
+  return (
+    <>
+      <Hero />
+      <Posts />
+      <Featured />
+    </>
+  );
+};
 
-export default Home
+export default Home;

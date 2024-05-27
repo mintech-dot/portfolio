@@ -1,4 +1,4 @@
-import avatar from "../assets/avatar.png";
+import avatar from "../../assets/avatar.png";
 const Hero = () => {
   return (
     <section className="grid grid-cols-1 md:grid-cols-2   lg:px-[120px] lg:pt-12">
