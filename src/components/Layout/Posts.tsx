@@ -19,6 +19,7 @@ const Posts = () => {
         {post.map((post, index) => (
           <div className="my-4 mx-[11px] md:mx-0 p-4 lg:p-6 bg-[#ffffff] rounded-[4px] shadow">
             <Post
+              link={post.link}
               key={index}
               title={post.title}
               date={post.date}
