@@ -1,7 +1,7 @@
-import X from '../../assets/X.svg'
-import Linkedin from '../../assets/Linkedin.svg'
-import fb from '../../assets/fb.svg'
-import insta from '../../assets/insta.svg'
+import X from '../../../public/assets/X.svg'
+import Linkedin from '../../../public/assets/Linkedin.svg'
+import fb from '../../../public/assets/fb.svg'
+import insta from '../../../public/assets/insta.svg'
 const Footer = () => {
     return (
         <footer className='pt-[51px] mt-[150px] pb-[44px]'>
