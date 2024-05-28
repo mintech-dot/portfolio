@@ -11,6 +11,7 @@ const Featured = () => {
       {features.map((feature, index) => (
         <FeatureItem
           key={index}
+          link={feature.link}
           imgSrc={feature.imgSrc}
           title={feature.title}
           year={feature.year}
