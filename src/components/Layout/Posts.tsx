@@ -1,6 +1,6 @@
 import Post from "../ui/PostCard";
 import config from "../../config/posts.json";
-// Define a type for the Post props
+import  { NavLink } from "react-router-dom";
 
 const Posts = () => {
   const { post } = config;
@@ -12,7 +12,7 @@ const Posts = () => {
           Recent Posts
         </h1>
         <h1 className="text-center md:text-right text-[16px] sm:hidden hidden md:block text-secondary pt-1">
-          view all
+         <NavLink to="/blog">view all</NavLink> 
         </h1>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-[20px]">
