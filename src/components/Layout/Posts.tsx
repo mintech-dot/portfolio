@@ -1,29 +1,9 @@
 import Post from "../ui/PostCard";
+import config from "../../config/posts.json";
 // Define a type for the Post props
-type PostProps = {
-  title: string;
-  date: string;
-  categories: string;
-  description: string;
-};
 
 const Posts = () => {
-  const postDetails: PostProps[] = [
-    {
-      title: "Making a design system from scratch",
-      date: "12 Feb 2020",
-      categories: "Design, Pattern",
-      description: `Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
-                      Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.`,
-    },
-    {
-      title: "Creating pixel perfect icons in Figma",
-      date: "12 Feb 2020",
-      categories: "Design, Pattern",
-      description: `Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
-                      Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.`,
-    },
-  ];
+  const { post } = config;
 
   return (
     <section className="bg-[#EDF7FA] py-4 lg:px-[120px] sm:px-[45px]">
@@ -36,7 +16,7 @@ const Posts = () => {
         </h1>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-[20px]">
-        {postDetails.map((post, index) => (
+        {post.map((post, index) => (
           <div className="my-4 mx-[11px] md:mx-0 p-4 lg:p-6 bg-[#ffffff] rounded-[4px] shadow">
             <Post
               key={index}
