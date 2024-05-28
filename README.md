@@ -59,23 +59,18 @@ Here's a brief overview of the folder structure:
 ```
 portfolio-website/
 ├── public/
-│   ├── index.html
+│   ├── assets/
 │   └── ...
 ├── src/
-│   ├── assets/
-│   │   └── ...
 │   ├── components/
-│   │   ├── Footer.tsx
-│   │   ├── Header.tsx
-│   │   ├── Hero.tsx
-│   │   ├── Navbar.tsx
-│   │   ├── Posts.tsx
-│   │   └── ...
+│   │   ├── Layout/
+│   │   ├── partials/
+│   │   ├── ui/
 │   ├── pages/
-│   │   ├── About.tsx
+│   │   ├── Blog.tsx
 │   │   ├── Contact.tsx
 │   │   ├── Home.tsx
-│   │   ├── Projects.tsx
+│   │   ├── Works.tsx
 │   │   └── ...
 │   ├── App.tsx
 │   ├── index.tsx
