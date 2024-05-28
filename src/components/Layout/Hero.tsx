@@ -21,7 +21,9 @@ const Hero = () => {
             veniam consequat sunt nostrud amet.
           </p>
           <div className="flex items-center justify-center lg:justify-start md:justify-start pb-[58px]">
-            <Button variant="primary" size="large">Download Resume</Button>
+            <Button variant="primary" size="large">
+              Download Resume
+            </Button>
           </div>
         </div>
       </div>

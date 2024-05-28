@@ -1,11 +1,11 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 
 type PostProps = {
   title: string;
   date: string;
   categories: string;
   description: string;
-  link: string;  
+  link: string;
 };
 
 const Post = ({ title, date, categories, description, link }: PostProps) => {

@@ -8,6 +8,7 @@ const Works = () => {
       <h1 className="text-[44px] text-dark font-black mx-4 md:mx-0">Works</h1>
       {features.map((feature, index) => (
         <FeatureItem
+          link={feature.link}
           key={index}
           imgSrc={feature.imgSrc}
           title={feature.title}

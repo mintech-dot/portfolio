@@ -1,7 +1,5 @@
 import Post from "../components/ui/PostCard";
-
 import config from "../config/posts.json";
-// Define a type for the Post props
 
 const Blog = () => {
   const { post } = config;
@@ -12,6 +10,7 @@ const Blog = () => {
         {post.map((post, index) => (
           <>
             <Post
+              link={post.link}
               key={index}
               title={post.title}
               date={post.date}
