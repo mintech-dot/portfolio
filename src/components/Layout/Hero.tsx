@@ -1,3 +1,4 @@
+import Button from "../ui/Button";
 import avatar from "../../../public/assets/avatar.png";
 const Hero = () => {
   return (
@@ -20,9 +21,7 @@ const Hero = () => {
             veniam consequat sunt nostrud amet.
           </p>
           <div className="flex items-center justify-center lg:justify-start md:justify-start pb-[58px]">
-            <button className="bg-primary text-[#ffffff] font-medium text-[20px] rounded-[2px] px-[20px] py-2.5">
-              Download Resume
-            </button>
+            <Button variant="primary" size="large">Download Resume</Button>
           </div>
         </div>
       </div>

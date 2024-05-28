@@ -1,3 +1,4 @@
+import Button from "../components/ui/Button";
 const Contact = () => {
   return (
     <section className="bg-white py-8 lg:py-16 px-8 mt-8 mx-4 md:mx-auto max-w-screen-md border border-light/20 shadow-lg">
@@ -43,12 +44,7 @@ const Contact = () => {
           ></textarea>
         </div>
         <div className="grid place-items-center ">
-          <button
-            type="submit"
-            className=" py-3 px-5 text-sm font-medium text-center text-[#ffffff] bg-primary rounded-lg w-full sm:w-fit"
-          >
-            Send Message
-          </button>
+          <Button variant="primary" size="medium">Send Message</Button>
         </div>
       </form>
     </section>
