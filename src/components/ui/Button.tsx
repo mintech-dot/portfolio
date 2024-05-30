@@ -43,8 +43,19 @@ const Button = ({
       className += " py-3 px-5 text-sm rounded-lg ";
   }
 
+  switch (type) {
+    case "submit":
+      className += " ";
+      break;
+    case "reset":
+      className += " ";
+      break;
+    default:
+      className += " ";
+  }
+
   return (
-    <button type={type} className={className}>
+    <button className={className}>
       {children}
     </button>
   );

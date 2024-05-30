@@ -26,7 +26,7 @@ const Contact = () => {
           <Textarea id="message" placeholder="Your message..." />
         </div>
         <div className="grid place-items-center">
-          <Button variant="primary" size="medium">Send Message</Button>
+          <Button variant="primary" type="submit" size="medium">Send Message</Button>
         </div>
       </form>
     </section>
